@@ -10,6 +10,8 @@ const hdn = document.getElementById('HiddenN')
 let nc =''
 let exit = document.getSelection('#exit')
 let n = 0;
+let mmoney = prompt("จำนวนเงินสูงสุดของสิทธิ์")
+let psit = prompt("จำนวนสิทธิ์")
 function count(){
 
     tcount.innerHTML = "";
@@ -18,8 +20,8 @@ function count(){
       
 setTimeout(()=>{
 
-   if(tprice.value > 500){   //จำนวนเงินสูงสุดของสิทธิ์
-      tcount.innerHTML = 10;  //จำนวนสิทธ์สูงสุด
+   if(tprice.value > parseInt(mmoney)){   //จำนวนเงินสูงสุดของสิทธิ์
+      tcount.innerHTML = parseInt(psit);  //จำนวนสิทธ์สูงสุด
    }
    else{
       tcount.innerHTML = parseInt((tprice.value/50));       // จำนวนเงิน / ราคาต่อสิทธ์
