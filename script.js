@@ -10,7 +10,6 @@ const hdn = document.getElementById('HiddenN')
 let nc =''
 let exit = document.getSelection('#exit')
 let n = 0;
-let mmoney = prompt("จำนวนเงินสูงสุดของสิทธิ์")
 let psit = prompt("จำนวนสิทธิ์")
 function count(){
 
@@ -20,7 +19,7 @@ function count(){
       
 setTimeout(()=>{
 
-   if(tprice.value > parseInt(mmoney)){   //จำนวนเงินสูงสุดของสิทธิ์
+   if(tprice.value > parseInt(psit*50)){   //จำนวนเงินสูงสุดของสิทธิ์
       tcount.innerHTML = parseInt(psit);  //จำนวนสิทธ์สูงสุด
    }
    else{
