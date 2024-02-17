@@ -10,7 +10,7 @@ const hdn = document.getElementById('HiddenN')
 let nc =''
 let exit = document.getSelection('#exit')
 let n = 0;
-let psit = prompt("จำนวนสิทธิ์")
+let psit = prompt("จำนวนสิทธิ์ที่กำหนด")
 function count(){
 
     tcount.innerHTML = "";
