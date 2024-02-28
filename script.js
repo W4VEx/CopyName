@@ -77,7 +77,9 @@ function AddName(){
 
       const shn = document.createElement('div')
       shn.classList.add('shname')
-      shn.innerHTML = nc;
+      shn.innerHTML = `<center>${nc}</center>`
+      shn.innerHTML += `<br>`
+      shn.innerHTML += `จำนวนสิทธิ์ที่ได้ : ` + parseInt(tcount.innerHTML) 
 
 
       const qui = document.createElement('div')

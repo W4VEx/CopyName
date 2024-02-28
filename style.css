@@ -86,11 +86,12 @@ button{
 .clname{
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
     background-color: rgba(30, 221, 113, 0.3);
     border-radius: 20px;
     position: relative;
-    width: 130px;
+    width: 100%;
     min-height: 330px;
 
 
