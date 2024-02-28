@@ -1,4 +1,4 @@
-const tname = document.getElementById('tname')
+let tname = document.getElementById('tname')
 let tprice = document.getElementById('tprice')
 let tcount = document.getElementById('tcount')
 let Sname = document.getElementById('Sname')
@@ -6,11 +6,19 @@ let cSname = document.getElementById('cSname')
 let clname = document.getElementById('clname')
 
 let add = document.getElementById('add')
-const hdn = document.getElementById('HiddenN')
+let hdn = document.getElementById('HiddenN')
 let nc =''
-let exit = document.getSelection('#exit')
+let exit = document.getElementById('exit')
+let msit = document.getElementById('msit')
+
 let n = 0;
 let psit = prompt("จำนวนสิทธิ์สูงสุด")
+
+
+
+msit.innerHTML = `จำนวนสิทธิ์ที่กรอก :`+ ` ` +parseInt(psit);
+
+
 function count(){
 
     tcount.innerHTML = "";
@@ -71,6 +79,7 @@ function AddName(){
       shn.classList.add('shname')
       shn.innerHTML = nc;
 
+
       const qui = document.createElement('div')
       qui.classList.add('quit') 
 
@@ -97,6 +106,7 @@ function render(){
          nc += tname.value+`<br>`
 
          }
+      
         
          
    }

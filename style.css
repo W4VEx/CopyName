@@ -102,3 +102,9 @@ button{
     margin-top: 35px;
 
 }
+.msit{
+    display: flex;
+    justify-content: right;
+    align-items: end;
+    margin-right: 2rem;
+}
