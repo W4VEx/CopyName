@@ -14,9 +14,7 @@ let msit = document.getElementById('msit')
 let n = 0;
 let psit = prompt("จำนวนสิทธิ์สูงสุด")
 
-
-
-msit.innerHTML = `จำนวนสิทธิ์ที่กรอก :`+ ` ` +parseInt(psit);
+msit.innerHTML = `จำนวนสิทธิ์สูงสุด : ` + parseInt(psit);
 
 
 function count(){
